@@ -1,0 +1,47 @@
+body{
+    font-family: "Audiowide", sans-serif;
+    background-image: url(gif.gif);
+}
+#container{
+    display: flex;
+    justify-content:center; 
+}
+#entrada,#saida{
+    width: 70vmax;
+    height: 70vmin;
+    width: 50vmax;
+    height: 50vmin;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+input{
+    font-weight: bold;
+    color: #099a02 ;
+    text-align: center;
+    border: none;
+    background-color:black;
+}
+input{
+    font-family: "Audiowide", sans-serif;
+    outline: none;
+    font-size: 8vmax;
+    font-size: 7vmin;
+}
+h2{
+    text-align: center;
+    font-size: 6vmax;
+    font-size: 5vmin;
+    color: 	#EEEEE0;
+}
+p{
+    text-align: center;
+    font-size: 4vmax;
+    font-size: 3vmin;
+    color: 	#EEEEE0;
+}
+:placeholder-shown{
+    font-size: 4vmax;
+    font-size: 3vmin;
+}

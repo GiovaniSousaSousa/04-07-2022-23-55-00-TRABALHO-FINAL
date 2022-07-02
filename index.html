@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Conversor de unidades</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    </head>
+  <body>
+    <div id="container">
+      <div id="entrada">
+        <h2>Conversor de sistemas numéricos!</h2>
+        <p>
+          <input id="inputValor" 
+                  maxlength="10"
+                  placeholder ="Digite um número!" 
+                  oninput="converter(this.value)"
+                  onchange="converter(this.value)" 
+          />
+        </p>
+      </div>
+      <div id="saida">
+        <p id="resbin">Resultado Binario</p>
+        <p id="resoct">Resultado Octal</p>
+        <p id="reshex">Resultado Hexadecimal</p>
+      </div>
+    </div>
+      <script>
+        function converter(){
+          var valor = window.document.getElementById('inputValor')
+          var valorEntrada = Number(inputValor.value)
+          var binario = valorEntrada.toString(2)
+          var octal = valorEntrada.toString(8)
+          var hexa = valorEntrada.toString(16)
+          var resbin = window.document.getElementById('resbin')
+          var resoct = window.document.getElementById('resoct')
+          var reshex = window.document.getElementById('reshex')
+          resbin.innerHTML = `O binario de ${valorEntrada} é ${binario}`
+          resoct.innerHTML = `O octal de ${valorEntrada} é ${octal}`
+          reshex.innerHTML = `O hexadecimal de ${valorEntrada} é ${hexa}`
+        }
+      </script>
+  </body>
+</html>
+
+
